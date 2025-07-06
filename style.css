@@ -1,0 +1,16 @@
+.box{
+    background-color:green;
+    width: 200px;
+    height: 200px;
+}
+
+@media (orientation:landscape){
+.box{
+    background-color: red;
+}
+}
+
+.sidebar{
+    width: 20%;
+    border-left: 200px;
+}
