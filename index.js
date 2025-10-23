@@ -1,12 +1,15 @@
+let str = "success";
 
-let str="success"
+function display(str) {
+  let obj = {};
 
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (obj[char]) return char;
+    obj[char] = true;
+  }
 
-function display(str){
-
-    let obj={}
-
+  return null;
 }
 
-
-console.log(display(str))
+console.log(display(str));
