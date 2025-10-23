@@ -1,16 +1,10 @@
-var x = 1;
-
-
-a(); //10
-b(); //100
-
-console.log(x); //1
-function a() {
-  var x = 10;
-  console.log(x); //10
-}
-function b() {
-  var x = 100;
-  console.log(x); //100
-}
-
+let test = true;
+let counter = 0;
+setTimeout(() => {
+  test = false;
+}, 2000);
+setInterval(() => {
+  if (test) {
+    console.log(counter++);
+  }
+}, 1000);
