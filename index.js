@@ -5,13 +5,20 @@ const run = document.querySelector(".func_run");
 let typedTimes = 0;
 let runTimes = 0;
 
+const myDebounce = (func, delay) => {
+  let timer = 0;
+  return function () {
+    clearInterval(timer);
 
-const debounceFunc=myDebounce(()=>{
+    timer = setTimeout(() => {
+      func();
+    }, delay);
+  };
+};
 
-    
-
-},1200)
-
+const debounceFunc = myDebounce(() => {
+  run.innerHTML = runTimes++;
+}, 1200);
 
 input.addEventListener("input", () => {
   clicked.innerHTML = typedTimes++;
