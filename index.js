@@ -1,21 +1,8 @@
 
-function sum(a){
-    return function(b){
-        return function(c){
-            
-            return function(){
+let str="furry"
 
-                
-                return a+b+c
-            }
+function display(str){
 
-        }
-    }
 }
 
-const result=sum
-const result1=result
-const result2=result1
-const result3=result2
-
-console.log(result3(3)(2)(4)())
+console.log(display(str))
