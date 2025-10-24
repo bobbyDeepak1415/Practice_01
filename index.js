@@ -1,15 +1,15 @@
-console.log("start");
+console.log("start"); 
 
 const func = () => {
-  new Promise((resolve, reject) => {
-    console.log(1);
-    resolve("success");
+ return new Promise((resolve, reject) => {
+    console.log(1); 
+    resolve("success"); 
   });
 };
-console.log("middle");
+console.log("middle"); 
 
-fn().then((res) => {
+func().then((res) => {
   console.log(res);
 });
 
-console.log("end");
+console.log("end"); 
