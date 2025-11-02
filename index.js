@@ -1,5 +1,20 @@
-setTimeout(() => {
-  for (let i = 1; i <= 3; i++) {
-    console.log(i);
+
+
+function outerFunc(outerVariable){
+  return function innerFunc(innerVariable){
+    return function innnnerFunc(innnnerVariable){
+      return function oneMore(){
+
+        return outerVariable+innerVariable+innnnerVariable
+      }
+
+    }
   }
-}, 1000);
+}
+
+
+
+
+
+
+console.log(outerFunc("000")("111")("222")());
