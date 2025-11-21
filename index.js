@@ -1,15 +1,28 @@
-function outerFunc(outerVariable) {
-  return function innerFunc(innerVariable) {
-    return function innnnerFunc(innnnerVariable) {
-      return outerVariable + innerVariable + innnnerVariable;
-    };
+
+
+
+const input = document.querySelector("input");
+const functionClicked = document.querySelector(".clicked");
+const functionRun = document.querySelector(".func_run");
+
+let clickedTimes = 0;
+let runTimes = 0;
+
+const myDebounce = (func, delay) => {
+  let timer = 0;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func(...args);
+    }, delay);
   };
-}
+};
 
-const newFunc = outerFunc;
-const newerFunc = newFunc;
-const oneMore = newerFunc;
+const functionDebounce = myDebounce(() => {
+  functionRun.innerHTML = ++runTimes;
+}, 1000);
 
-console.log(oneMore("000")("111")("222"));
-
-// console.log(outerFunc("000")("111")("222"));
+input.addEventListener("input", () => {
+  functionClicked.innerHTML = ++clickedTimes;
+  functionDebounce();
+});
