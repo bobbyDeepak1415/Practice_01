@@ -8,6 +8,6 @@ let person1 = {
   },
 };
 
-let { title: name } = person1;
+let { name:title } = person1;
 
-console.log(title);
+console.log(title)
