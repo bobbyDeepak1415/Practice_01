@@ -1,22 +1,31 @@
 
 
 let arr1=["Bobby","Deepak","Leo","Kingman"]
+let arr=[5]
+
+let [x=10,y=20]=arr
+
+console.log(x)
 
 
-let [title,...remaining]=arr1
+// let [title,...remaining]=arr1
 
-console.log(title)
-console.log(remaining)
-
-
-
-// let obj1={}
+// console.log(title)
+// console.log(remaining)
 
 
-// function display(){
-//     console.log("kello")
+
+// let person1={
+//     name:"Deepak",
+//     age:29,
+//     active:true
 // }
 
-// display()
 
+// let {title}=person1
+
+
+// console.log(title)
+// console.log(years)
+// console.log(status)
 
