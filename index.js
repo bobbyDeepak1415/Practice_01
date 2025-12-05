@@ -1,8 +1,16 @@
 
 
-let arr1=[]
+let arr1=["Bobby","Deepak","Leo","Kingman"]
 
-let obj1={}
+
+let [title,...remaining]=arr1
+
+console.log(title)
+console.log(remaining)
+
+
+
+// let obj1={}
 
 
 // function display(){
