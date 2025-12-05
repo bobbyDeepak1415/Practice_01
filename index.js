@@ -4,8 +4,8 @@ let person1 = {
   active: true,
 };
 
-let { name, age, active } = person1;
+let { name:title, age, active } = person1;
 
-console.log(name);
+console.log(title);
 console.log(age);
 console.log(active);
