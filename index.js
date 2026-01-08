@@ -1,16 +1,15 @@
+const a = 10;
+console.log(a);
+
+setTimeout(() => {
+  console.log("timeout");
+
+  Promise.resolve().then(() => {
+    console.log("promise");
+  });
+}, 0);
+
+console.log("end");
 
 
-var a=10
-console.log(a)
-
-setTimeout(()=>{
-console.log("timeout")
-},0)
-
-Promise.resolve().then(()=>{
-    console.log("promise")
-})
-
-console.log("end")
-
-// 10,end,promise,timeout
+// 10,end,timeout,promise
