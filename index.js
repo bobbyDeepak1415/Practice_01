@@ -23,5 +23,6 @@ const debounce = myDebounce(() => {
 }, 1200);
 
 document.addEventListener("input", () => {
-    clicked.innerHTML = ++clickedTimes;
+  clicked.innerHTML = ++clickedTimes;
+  debounce()
 });
