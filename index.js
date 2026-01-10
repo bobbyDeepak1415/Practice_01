@@ -1,6 +1,6 @@
 // debounce
 
-const input = document.querySelector("button");
+const btn = document.querySelector("button");
 const clicked = document.querySelector(".clicked");
 const run = document.querySelector(".func_run");
 
@@ -22,7 +22,7 @@ const debounce = myDebounce(() => {
   run.innerHTML = ++runTimes;
 }, 1200);
 
-input.addEventListener("input", () => {
+document.addEventListener("click", () => {
   clicked.innerHTML = ++clickedTimes;
-  debounce()
+  debounce();
 });
