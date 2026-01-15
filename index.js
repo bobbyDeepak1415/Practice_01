@@ -37,7 +37,9 @@ const alphabets = {
   },
 };
 
-console.log(
-  Object.values(alphabets)
-    
-);
+const arr = Object.values(alphabets);
+
+const sortedArr=arr.sort((a,b)=>a.name.localeCompare(b.name))
+const newArr=sortedArr.
+
+// console.log(newArr)
