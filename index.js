@@ -31,7 +31,8 @@ const alphabets = {
     name: "m",
     series: 8,
   },
-};...alphabets.a.
+};
+ console.log(Object.keys(alphabets))
 
 
 
