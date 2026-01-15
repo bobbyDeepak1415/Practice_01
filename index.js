@@ -1,6 +1,6 @@
 const alphabets = {
   d: {
-    name: "d",
+    name: "dd",
     series: 4,
   },
   k: {
@@ -31,8 +31,11 @@ const alphabets = {
     name: "m",
     series: 8,
   },
+  b: {
+    name: "b",
+    series: 8,
+  },
 };
- console.log(Object.keys(alphabets))
+const arr1 = Object.values(alphabets).sort((a, b) => a.name - b.name);
 
-
-
+console.log(arr1.map(item=>item.name))
