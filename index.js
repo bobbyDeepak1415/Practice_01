@@ -31,7 +31,7 @@ const alphabets = {
     name: "m",
     series: 8,
   },
-};
+};...alphabets.a.
 
 
 
