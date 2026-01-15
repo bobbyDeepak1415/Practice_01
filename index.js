@@ -16,7 +16,7 @@ const alphabets = {
     series: 7,
   },
   l: {
-    name: "l",.....
+    name: "l",
     series: 1,
   },
   a: {
@@ -36,3 +36,8 @@ const alphabets = {
     series: 8,
   },
 };
+
+console.log(
+  Object.values(alphabets)
+    
+);
