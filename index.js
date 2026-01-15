@@ -36,6 +36,3 @@ const alphabets = {
     series: 8,
   },
 };
-const arr1 = Object.values(alphabets).sort((a,b)=>a.name.localeCompare(b.name))
-
-console.log(arr1.map(item=>item.name));
