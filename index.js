@@ -16,7 +16,7 @@ const alphabets = {
     series: 7,
   },
   l: {
-    name: "l",
+    name: "l",.....
     series: 1,
   },
   a: {
