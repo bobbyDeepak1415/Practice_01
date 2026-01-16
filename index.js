@@ -1,6 +1,6 @@
 const alphabets = {
   d: {
-    name: "dd",
+    name: "d",
     series: 4,
   },
   k: {
@@ -37,4 +37,4 @@ const alphabets = {
   },
 };
 
-console.log(Object.keys(alphabets))
+console.log(Object.values(alphabets).sort((a,b)=>a.name.localeCompare(b.name)))
