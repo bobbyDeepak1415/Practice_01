@@ -37,4 +37,8 @@ const alphabets = {
   },
 };
 
-console.log(Object.values(alphabets).sort((a,b)=>a.name.localeCompare(b.name)))
+console.log(
+  Object.values(alphabets)
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((item) => item.name)
+);
