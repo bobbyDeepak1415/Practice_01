@@ -1,13 +1,10 @@
+// console.log(name)
 
+const name = "Bobby";
+let title;
+title = "Deepak";
+console.log(title);
+var firstName
+firstName= "Bob";
 
-const name="Bobby";
-let title="Deepak"
-var firstName="Bob"
-
-console.log(name)
-console.log(firstName)
-console.log(title)
-
-
-
-
+console.log(firstName);
