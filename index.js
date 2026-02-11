@@ -1,15 +1,13 @@
-console.log(name);
-console.log(title);
-console.log(firstName);
-
-var name
-let title=="Bobby"
-title
-// const firstName
-
-name="Leo"
 
 
-// firstName="Bob"
+const name="Bobby";
+let title="Deepak"
+var firstName="Bob"
 
-// console.log("hello");
+console.log(name)
+console.log(firstName)
+console.log(title)
+
+
+
+
