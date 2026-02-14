@@ -10,3 +10,5 @@ test();
 Promise.resolve().then(() => console.log("E"));
 setTimeout(() => console.log("F"), 0);
 console.log("G");
+
+// (A, G, B, C, D, E, F);
