@@ -7,9 +7,9 @@ async function test() {
   console.log("D");
 }
 test();
-await Promise.resolve().then(() => console.log("E"));
+Promise.resolve().then(() => console.log("E"));
 setTimeout(() => console.log("F"), 0);
 console.log("G");
 
 
-// A.
+// A,B,C,G,D,E,F
