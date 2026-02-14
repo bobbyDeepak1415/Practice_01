@@ -1,9 +1,9 @@
 console.log("A");
 async function test() {
   console.log("B");
-  await Promise.resolve();
+  Promise.resolve();
   console.log("C");
-  await Promise.resolve();
+   Promise.resolve();
   console.log("D");
 }
 test();
