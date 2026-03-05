@@ -11,4 +11,7 @@
 // setTimeout(() => console.log("F"), 0);
 // console.log("G");
 
-// a,b,g,c,d,e,f
+
+
+
+// b,a,g,c,d,e,f
