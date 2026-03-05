@@ -15,10 +15,7 @@
 
 
 
-var myVar
 
-myVar="Leo"
 
-console.log(myVar)
 
 
