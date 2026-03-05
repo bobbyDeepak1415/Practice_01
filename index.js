@@ -13,11 +13,7 @@
 
 
 
-let first=()=>{
-  console.log("hello")
-}
 
-first()
 
 
 
