@@ -17,3 +17,9 @@
 
 
 
+let myVar
+
+
+console.log(myVar)
+
+myVar="Bobby"
