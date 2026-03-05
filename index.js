@@ -12,9 +12,12 @@
 // console.log("G");
 
 
+
+let first=()=>{
+  console.log("hello")
+}
+
 first()
 
-var first=()=>{
 
-}
 
