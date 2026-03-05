@@ -1,7 +1,7 @@
 // console.log("A");
 // async function test() {
 //   console.log("B");
-// await Promise.resolve();
+//  Promise.resolve();
 //   console.log("C");
 //   Promise.resolve();
 //   console.log("D");
@@ -11,6 +11,4 @@
 // setTimeout(() => console.log("F"), 0);
 // console.log("G");
 
-// a,g, b,d,e,c,f
-
-
+// a,b,c,d,g,e,f
