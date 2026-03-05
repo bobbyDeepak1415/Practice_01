@@ -15,11 +15,10 @@
 
 
 
+var myVar
 
-
-let myVar
-
+myVar="Leo"
 
 console.log(myVar)
 
-myVar="Bobby"
+
