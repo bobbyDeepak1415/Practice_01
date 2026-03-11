@@ -1,11 +1,10 @@
 // console.log("A");
 // async function test() {
 //   console.log("B");
-//   Promise.resolve().then(()=>console.log("X"))
 
+//   Promise.resolve().then(()=>console.log("C"))
 //  await Promise.resolve()
-//   console.log("C");
-//   Promise.resolve().then(()=>console.log("D"))
+//   console.log("D");
 
 // }
 // test();
@@ -15,3 +14,4 @@
 
 
 
+// 
