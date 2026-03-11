@@ -15,6 +15,6 @@
 
 
 
-const title=true
+const title=new String("Bobby")
 
-console.log(typeof(title))
+console.log(title)
