@@ -16,17 +16,6 @@
 
 
 
-const users = [
-  { id: 1, name: "Alex" },
-  { id: 2, name: "Sam" },
-];
 
 
 
-const userMap=users.reduce((acc,user)=>{
-    acc[user.id]=user.name
-    return acc
-},{})
-
-
-console.log(userMap)
