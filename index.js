@@ -15,4 +15,6 @@
 
 
 
-const 
+const title=true
+
+console.log(typeof(title))
