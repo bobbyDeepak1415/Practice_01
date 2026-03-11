@@ -1,10 +1,10 @@
 // console.log("A");
 // async function test() {
 //   console.log("B");
-//   await Promise.resolve();
+//   Promise.resolve().then(()=>console.log("C"))
 
-//   console.log("C");
-//   Promise.resolve().then(() => console.log("D"));
+//  await Promise.resolve()
+// console.log("D")
 
 // }
 // test();
@@ -17,3 +17,5 @@
 
 
 // a,b,g,c,e,d,f
+
+//   console.log("C");
