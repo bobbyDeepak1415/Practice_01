@@ -15,6 +15,5 @@
 
 
 
-const title=new String("Bobby")
 
-console.log(title)
+// a,b,g,c,e,d,f
