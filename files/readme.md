@@ -1,0 +1,2 @@
+
+I lied down to take a nap and for 30 mins it happened.i think i saw either what my mind conjured up out of all the visuals i have in my head,things i have gathered from some movie or some sermon i have some speech i heard in a religious setting or something completely rare.i saw what heaven and hell look like

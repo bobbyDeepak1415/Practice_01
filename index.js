@@ -13,9 +13,3 @@
 // console.log("G");
 
 // const fruits = ["apple", "banana", "apple"];
-
-
-
-
-
-
