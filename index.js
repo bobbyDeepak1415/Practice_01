@@ -25,12 +25,20 @@ function display() {
     obj[i] = (obj[i] || 0) + 1;
   }
 
+  //   for (let i of str) {
+  //     result+= i + obj[i];
+  //   }
+
+  let seen = new Set();
+
   for (let i of str) {
-    result= i + obj[i];
+    if (!seen.has(i)) {
+      result += i + obj[i];
+      seen.add(i);
+    }
   }
 
-  return result
+  return result;
 }
 
-
-console.log(display(str))
+console.log(display(str));
