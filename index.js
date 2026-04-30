@@ -13,3 +13,19 @@
 // console.log("G");
 
 // const fruits = ["apple", "banana", "apple"];
+
+let str = "AABBBCDAADEEEEE";
+
+function display() {
+  let obj = {};
+
+  let result = "";
+
+  for (let i of str) {
+    obj[i] = (obj[i] || 0) + 1;
+  }
+
+  for (let i of str) {
+    result += i + obj[i];
+  }
+}
