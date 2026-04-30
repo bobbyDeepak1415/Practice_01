@@ -14,7 +14,7 @@
 
 // const fruits = ["apple", "banana", "apple"];
 
-let str = "AABBBCDAADEEEEE";
+let str = "AABBBCDAADEEEEEA";
 
 function display() {
   let obj = {};
@@ -26,6 +26,11 @@ function display() {
   }
 
   for (let i of str) {
-    result += i + obj[i];
+    result= i + obj[i];
   }
+
+  return result
 }
+
+
+console.log(display(str))
