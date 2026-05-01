@@ -14,16 +14,17 @@
 
 // const fruits = ["apple", "banana", "apple"];
 
+const person1 = {
+  name: "Bobby",
+  age: 30,
+  print() {
+    return this.name + " is " + this.age + " years old";
+  },
+};
 
-
-
-const person1={
-    name:"Bobby",
-    age:30,
-    print:function(){
-        return this.name+" is "+this.age+" years old"  
-    }
-}
-
+const person2 = {
+  name: "Deepak",
+  age: 31,
+};
 
 console.log(person1.print())
