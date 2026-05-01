@@ -17,8 +17,8 @@
 const person1 = {
   name: "Bobby",
   age: 30,
-  print() {
-    return this.name + " is " + this.age + " years old";
+  print(country) {
+    return this.name + " is " + this.age + " years old and lives in "+country
   },
 };
 
@@ -28,4 +28,6 @@ const person2 = {
 };
 
 
+
+console.log(person1.print())
 
