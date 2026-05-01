@@ -27,4 +27,5 @@ const person2 = {
   age: 31,
 };
 
-console.log(person1.print())
+
+
