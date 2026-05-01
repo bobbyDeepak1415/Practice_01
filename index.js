@@ -13,3 +13,17 @@
 // console.log("G");
 
 // const fruits = ["apple", "banana", "apple"];
+
+
+
+
+const person1={
+    name:"Bobby",
+    age:30,
+    print:function(){
+        return this.name+" is "+this.age+" years old"  
+    }
+}
+
+
+console.log(person1.print())
