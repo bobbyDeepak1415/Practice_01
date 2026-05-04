@@ -15,8 +15,6 @@
 let nums = [56, 5, 4, 3, 7, 98, 12];
 
 function sortNums(nums) {
-  
-
   return nums;
 }
 
