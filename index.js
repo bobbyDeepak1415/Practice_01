@@ -15,4 +15,11 @@
 
 
 
-// let nums=[56,5,4,3,7,98,12]
+let nums=[56,5,4,3,7,98,12]
+
+
+function display(){
+
+}
+
+// console.log(display(nums))
