@@ -11,3 +11,8 @@
 // Promise.resolve().then(() => console.log("E"));
 // setTimeout(() => console.log("F"), 0);
 // console.log("G");
+
+
+
+
+let nums=[56,5,4,3,7,98,12]
