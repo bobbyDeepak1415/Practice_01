@@ -1,2 +1,0 @@
-
-i minimise bugs by using good and clean coding practices , i also use early validation and systematic debugging. i use tools like es lint and prettier to catch issues arly on. i maintain the code in a structured manner so that the state is predictible. i also validate apis 
