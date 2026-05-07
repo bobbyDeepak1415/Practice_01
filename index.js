@@ -12,25 +12,3 @@
 // setTimeout(() => console.log("F"), 0);
 // console.log("G");
 
-
-
-let arr1=[34,4,12,5,3,2,1]
-
-
-function display(arr){
-
-    for(let i=0;i<arr.length;i++){
-        for(let j=0;j<arr.length-1-i;j++){
-            if(arr[j]>arr[j+1]){
-                let temp=arr[j]
-                arr[j]=arr[j+1]
-                arr[j+1]=temp
-            }
-        }
-    }
-
-    return arr
-
-}
-
-console.log(display(arr1))
