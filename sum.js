@@ -9,8 +9,8 @@ const myDebounce = (func, delay) => {
   let timer = 0;
 
   return function (...args) {
-    setTimeout(() => {
       clearTimeout(timer);
+    timer=setTimeout(() => {
       func(...args);
     }, delay);
   };
