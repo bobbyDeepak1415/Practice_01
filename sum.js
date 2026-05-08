@@ -18,8 +18,9 @@ const myDebounce = (func, delay) => {
 
 const debounceFunc = myDebounce(() => {
   run.innerHTML = ++runTimes;
-}, 1500);
+}, 1000);
 
 button.addEventListener("click", () => {
   clicked.innerHTML = ++clickedTimes;
+  debounceFunc()
 });
