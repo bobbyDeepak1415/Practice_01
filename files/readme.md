@@ -1,2 +1,3 @@
-i minimise bugs by combining good clean coding practices along with early validation and systematic debugging. i use tools like eslint and prettier to catch issues early on. i also validate api responses and hane=dle edge cases upfront with the help of any fallback ui like a spinner or making use of error boundaries.
-whenever there is a bug, i reproduce it and inspect the console and network logs and trace the data flow back using react dev tools. i isolate the failing piece of code and fix the root cause. for important logic i write unit tests so that it does not keep coming back.also code reviews and tools like sentry and light house help in avoiding the issues in the production stage.
+
+
+
