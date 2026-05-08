@@ -1,4 +1,4 @@
-const sum=require('./sum')
+const sum=require('../sum')
 
 
 test("should add the two nums correctly",()=>{
