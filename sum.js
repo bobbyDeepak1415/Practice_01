@@ -11,7 +11,7 @@ let runTimes=0
 
 
 btn.addEventListener("click",()=>{
-
+clickedTimes++
 })
 
 
