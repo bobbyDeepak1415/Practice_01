@@ -6,21 +6,21 @@ let clickedTimes = 0;
 let runTimes = 0;
 
 const myDebounce = (func, delay) => {
-  let timer = 0;
+  let lastRun = 0;
 
   return function (...args) {
-    clearTimeout(timer);
-    timer = setTimeout(() => {
+    if (Date.now() - lastRun > delay) {
+      lastRun = Date.now();
       func(...args);
-    }, delay);
+    }
   };
 };
 
-const debounceFunc = myDebounce(() => {
+const throttleFunc = myThrottle(() => {
   run.innerHTML = ++runTimes;
 }, 1000);
 
 button.addEventListener("click", () => {
   clicked.innerHTML = ++clickedTimes;
-  debounceFunc()
+  throttleFunc();
 });
