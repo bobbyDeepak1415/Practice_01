@@ -6,10 +6,14 @@ let clickedTimes = 0;
 let runTimes = 0;
 
 const myThrottle = (func, delay) => {
-  let lastRun=new Date().toString()
+  let lastRun = 0;
 
   return function (...args) {
-     
+    if (Date.now() - lastRun > delay) {
+      lastRun = Date.now();
+      func(...args);
+    }
+  };
 };
 
 const throttleFunc = myThrottle(() => {
@@ -20,4 +24,3 @@ btn.addEventListener("click", () => {
   clicked.innerHTML = ++clickedTimes;
   throttleFunc();
 });
-
