@@ -20,9 +20,9 @@
     // }
     
     // console.log(display(str))
-    let str="hello"
+    let str="eclipse"
 
-    let word = str.slice(2, 1);
+    let word = str.slice(2,4);
 
 
-console.log(word)
+// console.log(word)
