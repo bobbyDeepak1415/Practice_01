@@ -20,4 +20,3 @@ function display(str){
 }
 
 console.log(display(str))
-// o/p= 
