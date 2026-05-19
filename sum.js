@@ -20,9 +20,4 @@
     // }
     
     // console.log(display(str))
-    let str="eclipse"
-
-    let word = str.slice(2,4);
-
-
-// console.log(word)
+    
