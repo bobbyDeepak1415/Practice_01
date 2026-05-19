@@ -10,12 +10,12 @@ function display(str){
     let result=[]
 
     for(let i of arr){
-        let capWord=i.charAt(0).toUpperCase()+word.slice(1)
+        let capWord=i.charAt(0).toUpperCase()+i.slice(1)
         let reverseWord=capWord.split("").reverse().join("")
         result.push(reverseWord)
     }
     
-    return result
+    return result.join(" ")
     
 }
 
