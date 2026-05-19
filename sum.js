@@ -21,6 +21,8 @@
     
     // console.log(display(str))
     let str="hello"
-str.splice(1,1)
 
-console.log(str)
+    let word = str.slice(2, 1);
+
+
+console.log(word)
