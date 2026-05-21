@@ -12,7 +12,7 @@ const checkFrequency = (arr1, arr2) => {
     f2[val] = (f2[val] || 0) + 1;
   }
 
-  console.log(f1, f2);
+//   console.log(f1, f2);
 
   for (let val1 of arr1) {
     let square = val1 * val1;
@@ -24,5 +24,8 @@ const checkFrequency = (arr1, arr2) => {
   return true;
 };
 
-checkFrequency([1, 2, 3], [9, 4, 1]); // false
-checkFrequency([1, 2, 3, 4, 7], [9, 4, 1, 1, 3]) // false
+
+checkFrequency([1, 2, 3], [1,4,9]); // false
+checkFrequency([], []) // false
+
+
