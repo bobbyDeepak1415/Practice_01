@@ -1,4 +1,4 @@
-const checkFrequency = (arr1, arr2) => {
+function checkFrequency (arr1, arr2)  {
   if (arr1.length !== arr2.length) return false;
 
   let f1 = {};
@@ -21,7 +21,7 @@ const checkFrequency = (arr1, arr2) => {
     }
   }
 
-  return true;
+  return f1
 };
 
 
