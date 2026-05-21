@@ -25,4 +25,4 @@ const checkFrequency = (arr1, arr2) => {
 };
 
 checkFrequency([1, 2, 3], [9, 4, 1]); // false
-// checkFrequency([1, 2, 3, 4, 7], [9, 4, 1, 1, 3]) // false
+checkFrequency([1, 2, 3, 4, 7], [9, 4, 1, 1, 3]) // false
