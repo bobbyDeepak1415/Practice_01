@@ -1,25 +1,14 @@
-function display(greeting, name, age) {
-  return `${greeting} ${name} ${age}`;
+function call(num) {
+  const arr = [];
+
+  if (arr.length >= 5) return;
+
+  if (num > 0) {
+    num++;
+    arr.push(num);
+  }
+
+  call();
 }
 
-const call1 = display("Hello");
-
-const call2 = call1("bobby");
-
-console.log(call2(30));
-
-// function call(num) {
-//   const arr=[]
-
-//   if(num>0){
-//     num++
-//     arr.push(num)
-//     call(num);
-
-//   }
-
-//   call()
-
-// }
-
-// console.log(call(0));
+console.log(call(0));
