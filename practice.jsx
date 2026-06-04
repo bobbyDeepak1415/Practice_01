@@ -1,13 +1,18 @@
+function display() {
+  let count = 0;
 
-
-
-function greet(salutation){
-return function(name){
- return `${salutation} from ${name}`
+  return {
+    increment: () => {
+      return ++count;
+    },
+    decrement: () => {
+      return --count;
+    },
+  };
 }
-}
+const counter=display()
 
 
-const person=greet("hello")
-
-console.log(person('Bobby'))
+console.log(counter.decrement())
+console.log(counter.increment())
+console.log(counter.increment())
