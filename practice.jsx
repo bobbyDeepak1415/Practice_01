@@ -1,8 +1,13 @@
 
 
-let arr=[23,45,31,33]
+
+function greet(salutation){
+return function(name){
+ return `${salutation} from ${name}`
+}
+}
 
 
-arr.shift()
+const person=greet("hello")
 
-console.log(arr)
+console.log(person('Bobby'))
