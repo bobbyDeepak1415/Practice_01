@@ -1,25 +1,23 @@
-let str = "AABCCDDAABBDbbddDaDDd";
+let arr = [1, 1, 2, 3, 4, 5, 5, 5, 2];
 
 function display(arr) {
   let obj = {};
 
-  let result = "";
+  let result = [];
 
   for (let i of arr) {
-    let j = i.toLowerCase();
-    obj[j] = (obj[j] || 0) + 1;
+    obj[i] = (obj[i] || 0) + 1;
   }
-  let seen = new Set();
 
   for (let i of arr) {
-    let j = i.toLowerCase();
-    if (!seen.has(j)) {
-      seen.add(j);
-      result += i + obj[j];
+    if (obj[i] > 1) {
+      if (!result.includes(i)) {
+        result.push(i);
+      }
     }
   }
 
   return result;
 }
 
-console.log(display(str));
+console.log(display(arr));
