@@ -1,18 +1,21 @@
-function display() {
-  let fName = "Bobby";
+let person = {
+  lName: "Deepak",
 
-  return function () {
-    console.log(this.fName);
-  };
-}
+  regular() {
+    return function () {
+      return this.lName;
+    };
+  },
 
-display();
-
-const display1 = () => {
-  let fName = "Bob";
-  return function () {
-    console.log(this.fName);
-  };
+  arrow() {
+    return () => {
+      return this.lName;
+    };
+  },
 };
 
-display1();
+let call1 = person.regular();
+let call2 = person.arrow();
+
+console.log(call1());
+console.log(call2());
