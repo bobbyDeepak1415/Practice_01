@@ -1,12 +1,23 @@
+let arr = [1, 1, 2, 3, 4, 4];
 
-let arr=[1,1,2,3,4,4]
+function display(arr) {
+  let obj = {};
 
+  let result = [];
 
-function display(){
-    let obj={}
+  for (let i of arr) {
+    obj[i] = (obj[i] || 0) + 1;
+  }
 
-    for(let i )
+  for (let i of arr) {
+    if (obj[i] > 1) {
+      if (!result.includes(i)) {
+        result.push(i);
+      }
+    }
+  }
+
+  return result;
 }
 
-
-console.log(display(arr))
+console.log(display(arr));
