@@ -14,4 +14,4 @@ let person2 = {
   age: 50,
 };
 
-person1.print.apply(person2, ["Ongole"]);
+person1.print()
