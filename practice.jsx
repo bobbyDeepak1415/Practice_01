@@ -1,13 +1,23 @@
-function display() {
-
-    let bonus=45
 
 
-  return function (num) {
-    return num +bonus;
-  };
+let person1={
+    title:"Bob",
+    age:30,
+    active:true,
+    print:()=>{
+console.log(`${this.title} is ${this.age} years old and status is ${this.active}`)
+    }
 }
 
-const display1 = display();
+person1.print()
 
-console.log(display1(7));
+let person2={
+    title:"Deepak",
+    age:50,
+    
+}
+
+
+// person1.print()
+
+
