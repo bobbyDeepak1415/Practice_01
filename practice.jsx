@@ -9,12 +9,9 @@ let person1 = {
   },
 };
 
-
-
 let person2 = {
-    title: "Deepak",
-    age: 50,
+  title: "Deepak",
+  age: 50,
 };
 
-
-console.log(person1.print().call(person2));
+person1.print.call(person2);
