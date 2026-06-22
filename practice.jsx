@@ -9,9 +9,7 @@ let person1 = {
   },
 };
 
-let person2 = {
-  title: "Deepak",
-  age: 50,
-};
 
-person1.print()
+const naaam=person1.title
+
+console.log(naaam)
