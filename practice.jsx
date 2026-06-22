@@ -9,13 +9,12 @@ let person1 = {
   },
 };
 
-const print2 = person1.print()
 
-console.log(print2);
 
 let person2 = {
-  title: "Deepak",
-  age: 50,
+    title: "Deepak",
+    age: 50,
 };
 
-// person1.print()
+
+console.log(person1.print().call(person2));
