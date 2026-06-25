@@ -1,6 +1,9 @@
-let arr = [1, 2, 3];
-
-let arr2 = [4, 5, 6];
-
-arr.push(arr2);
-console.log(arr);
+function createCounter() {
+  let count = 0;
+  return () => ++count;
+}
+const a = createCounter();
+const b = createCounter();
+a();
+a();
+b();
