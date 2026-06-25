@@ -19,4 +19,4 @@ function display(arr){
 
 }
 
-// console.log(display(arr))
+console.log(display(arr))
