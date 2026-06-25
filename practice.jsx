@@ -1,6 +1,6 @@
+let arr = [1, 2, 3];
 
-let arr=[1,2,3]
+let arr2 = [4, 5, 6];
 
-let arr2=[4,5,6]
-
-console.log(arr.push(arr2))
+arr.push(arr2);
+console.log(arr);
