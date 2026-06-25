@@ -1,4 +1,6 @@
 
 let arr=[1,2,3]
 
-console.log(arr)
+let arr2=[4,5,6]
+
+console.log(arr.push(arr2))
