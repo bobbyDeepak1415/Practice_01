@@ -4,6 +4,7 @@ function createCounter() {
 }
 const a = createCounter();
 const b = createCounter();
-a();
+a()
 a();
 b();
+console.log(a());
