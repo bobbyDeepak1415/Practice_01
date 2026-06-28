@@ -1,6 +1,5 @@
 
-
-console.log("hello bruv")
+// Creating a Promise around an old callback API
 
 const promise1 = new Promise((resolve, reject) => {
   setTimeout(() => {
