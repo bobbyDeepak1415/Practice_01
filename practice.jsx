@@ -14,12 +14,15 @@
 // console.log(promise1);
 // // Expected output: [object Promise]
 
-
 // const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-const wait = () => new Promise((resolve) =>console.log(111));
+const wait = () =>
+  new Promise((resolve) => {
+    console.log(111);
+    resolve();
+  });
 
 wait().then(() => console.log(4));
 Promise.resolve()
   .then(() => console.log(2))
   .then(() => console.log(3));
-console.log(1); 
+console.log(1);
