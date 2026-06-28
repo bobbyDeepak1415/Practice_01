@@ -1,19 +1,16 @@
 // Creating a Promise around an old callback API
 
-const promise1 = new Promise((resolve, reject) => {
+const promise = new Promise((resolve, reject) => {
+  console.log("Promise callback"); //1
   setTimeout(() => {
-    resolve("foo");
-  }, 300);
+    resolve();
+  }, 1000);
+}).then((result) => {
+  console.log("Promise callback (.then)"); //4
 });
 
-promise1.then((value) => {
-  console.log(value);
-  // Expected output: "foo"
-});
+setTimeout(() => {
+  console.log("event-loop cycle: Promise (fulfilled)"); //3
+}, 0);
 
-console.log(promise1);
-// Expected output: [object Promise]
-
-const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-
+console.log("Promise (pending)",);//2
