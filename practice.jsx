@@ -32,3 +32,5 @@ setTimeout(() => {
 }, 0);
 
 console.log("Promise (pending)", promise);
+
+...
