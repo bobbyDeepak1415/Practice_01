@@ -18,9 +18,3 @@
 
 // ************************************************************************************************8
 
-//// Dont open terminal before guessing. first look at the chat in gemini and then revise and then guess
-
-const promise = new Promise((resolve, reject) => {
-  console.log("Promise callback"); 
-
-})
