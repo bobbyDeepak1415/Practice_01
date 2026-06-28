@@ -21,7 +21,7 @@
 //// Dont open terminal before guessing. first look at the chat in gemini and then revise and then guess
 
 const promise = new Promise((resolve, reject) => {
-  console.log("Promise callback");
+  console.log("Promise callback"); 
   resolve();
 }).then((result) => {
   console.log("Promise callback (.then)");
@@ -33,4 +33,6 @@ setTimeout(() => {
 
 console.log("Promise (pending)", promise);
 
-...
+
+
+// Promise callback,Promise (pending),Promise callback (.then),event-loop cycle: Promise (fulfilled)", promise
