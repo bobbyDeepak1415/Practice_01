@@ -13,4 +13,5 @@
 // console.log("G");
 
 
-// A
+
+// A,G,B,D,E,C,F
