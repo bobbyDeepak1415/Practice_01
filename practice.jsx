@@ -1,23 +1,9 @@
-// for (var i = 0; i < 3; i++) {
-//   setTimeout(() => {
-//     console.log(i); //1
-//   }, 0);
- 
-//   Promise.resolve().then(() => {
-//     console.log("P", i); //2
-//   });
-// }
- 
-// console.log("End"); //3
+const foods = [{ biriyani: 200 }, { "egg roll": 140 }, { sandwich: 95 }];
 
+function display(items) {
 
-// End, "p",3, 3
+    let obj={}
 
+}
 
-
-// for (var i = 0; i <=3; i++) {
-//   setTimeout(() => {
-//     console.log(i);
-//   }, 100);}
-  
-//   output: 3
+// console.log(display(foods))
