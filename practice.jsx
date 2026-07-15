@@ -1,9 +1,16 @@
-const foods = [{ biriyani: 200 }, { "egg roll": 140 }, { sandwich: 95 }];
 
-function display(items) {
 
-    let obj={}
 
-}
+const prom=new Promise((resolve,reject)=>{
+  console.log("hello")
+  resolve()
+})
 
-// console.log(display(foods))
+
+prom.then(()=>{
+  console.log("bye")
+}).catch((err)=>{
+  console.log('error',err)
+})
+
+
