@@ -18,9 +18,9 @@ let obj2={
 
 
 // console.log(obj1.display())
-const print=obj1.display.apply(obj2,["ny","DC"])
+const print=obj1.display.bind(obj2,"ny","DC")
 
-
+console.log(print())
 
 
 
