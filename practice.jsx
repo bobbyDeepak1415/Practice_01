@@ -4,13 +4,13 @@
 
 function display(){
     let name="Bobby"
-return function(){
-    return `${name} is my name`
+return function(age){
+    return `${name} is ${age} years old`
 }
 }
 
 
 const print=display()
 
-console.log(print())
+console.log(print(30))
 
