@@ -17,6 +17,28 @@
     <!-- <p>function called: <span class="func_run"></span> times</p> -->
 
     <!-- <script src="sum.js"></script> -->
-    <script src="practice.jsx"></script>
+    <!-- <script src="practice.jsx"></script> -->
+
+    <div id="parent" style="padding: 20px; background: lightgray;">
+  
+  <ul id="shoppingList">
+    <li data-item="apple">Apple</li>
+    <li data-item="banana">Banana</li>
+    <li data-item="orange">Orange</li>
+    <button>Click</button>
+
+  </ul>
+</div>
+
+<script>
+  
+  
+const list=document.querySelector("#shoppingList")
+
+  list.addEventListener('click', (event) => {
+    if(event.target && event.target.nodeName==="LI")
+    console.log('you clicked on ',event.target.textContent);
+  });
+</script>
   </body>
 </html>
