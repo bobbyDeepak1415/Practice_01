@@ -15,11 +15,23 @@
    
     <div id="parent" style="padding: 20px; background: lightgray;">
   
-  
+  <button id="btn">Click me</button>
+
 </div>
-<script src="index.js"></script>
 
 <script>
+
+  const parent=document.querySelector("#parent")
+  const btn=document.getElementById("btn")
+
+  parent.addEventListener("click",()=>{
+    console.log("parent clicked")
+  })
+  
+
+  btn.addEventListener("click",()=>{
+    console.log("btn clicked")
+  })
   
   
 </script>
