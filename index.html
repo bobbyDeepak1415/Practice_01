@@ -15,23 +15,28 @@
    
     <div id="parent" style="padding: 20px; background: lightgray;">
   
-  <button id="btn">Click me</button>
+  <ul id="list">
+<li data-item="apple">Apple</li>
+<li data-item="orange">Orange</li>
+<li data-item="grapes">Grapes</li>
+<button>Click me</button>
+  </ul>
 
 </div>
 
 <script>
 
   const parent=document.querySelector("#parent")
-  const btn=document.getElementById("btn")
+
+  const list=document.getElementById("list")
 
   parent.addEventListener("click",()=>{
-    console.log("parent clicked")
+    // console.log("parent clicked")
   })
   
-
-  btn.addEventListener("click",()=>{
-    console.log("btn clicked")
-  })
+list.addEventListener("click",(e)=>{
+  console.log("item clicked is :",e.target.textContent)
+})
   
   
 </script>
