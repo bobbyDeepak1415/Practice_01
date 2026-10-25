@@ -30,8 +30,12 @@
 
 
 
-      list.addEventListener("click",()=>{
-console.log('child clicked')
+      list.addEventListener("click",(event)=>{
+
+  if(event.target && event.target.nodeName==="LI"){
+    console.log(event.target.textContent)
+  }
+
       })
 
     </script>
