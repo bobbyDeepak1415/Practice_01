@@ -13,13 +13,29 @@
     <br />
     <br />
 
-    <div style="border: 1px solid black" id="parent-container">
+    <div style="border: 1px solid black; padding: 50px;" id="parent-container">
 <button id="button">
   Click me
 </button>
 
     </div>
    
+
+    <script>
+      const parent=document.querySelector("#parent-container")
+
+      const button=document.getElementById("button")
+
+
+      parent.addEventListener("click",()=>{
+        console.log('parent clicked')
+        
+      })
+      button.addEventListener("click",()=>{
+console.log('child clicked')
+      })
+
+    </script>
   
   </body>
 </html>
