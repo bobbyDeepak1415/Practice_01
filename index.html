@@ -14,9 +14,13 @@
     <br />
 
     <div style="border: 1px solid black; padding: 50px;" id="parent-container">
-<button id="button">
-  Click me
-</button>
+
+
+      <ul id="list">
+        <li li-item="apples">Apples</li>
+        <li li-item="apples">Oranges</li>
+        <li li-item="apples">Grapes</li>
+      </ul>
 
     </div>
    
@@ -24,14 +28,9 @@
     <script>
       const parent=document.querySelector("#parent-container")
 
-      const button=document.getElementById("button")
 
 
-      parent.addEventListener("click",()=>{
-        console.log('parent clicked')
-        
-      })
-      button.addEventListener("click",()=>{
+      list.addEventListener("click",()=>{
 console.log('child clicked')
       })
 
